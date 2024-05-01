@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.ficha-personal {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    background-color: #6f6f80;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+}
+.contenido {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-size: small;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.imagen {
+    width: 220px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.datos {
+    flex: 1;
+    overflow: hidden;
+}
+.footer {
+    background-color: #6f6f80;
+    text-align: center;
+    padding: 10px 0;
+}
+.logo {
+    max-width: 100px;
+}
+
+@media (max-width: 767px) {
+    .imagen {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .info {
+        text-align: left;
+        font-size: large;
+    }
+    .datos {
+        max-width: 100%;
+    }
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
